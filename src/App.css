@@ -1,38 +1,309 @@
-.App {
-  text-align: center;
-}
+/* font-family: 'Amatic SC', cursive;
+font-family: 'Cutive Mono', monospace;
+font-family: 'Raleway', sans-serif;
+font-family: 'VT323', monospace; */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+html, body {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: black;
+}
+.about {
+  padding-top: 4rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  height: 100vh;
+  position: sticky;
+  top:0;
+
+
+  /* position: relative; */
+}
+.a1 {
+  aspect-ratio: 800/400;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-image: url(./Components/layered-waves-haikei\ \(6\).svg);
+  transition: 2s;
+
+  
+}
+.a1-white {
+  aspect-ratio: 800/400;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+    background-image: url(./Components/layered-waves-haikei-white5.svg);
+    transition: 2s;
+  
+}
+.a2{
+  aspect-ratio: 800/300;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-image: url(./Components/blob-scene-haikei.svg);
+  z-index: 1;
+}
+
+.text-dark {
+  color: black;
+}
+.text-white {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.about2 {
+  padding-top: 4rem;
+  /* display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap; */
+
+}
+.glass {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1),rgba(255, 255, 255, 0.1));
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.);
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.gradient-box {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1), rgba(255, 0, 0, 0));
+}
+.nav-black{
+  background-color: black;
+}
+.ins-about {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-top: 80px;
+  transition: ease-out .3s;
+}
+.glass1:hover {
+  background-color: rgba(255, 255, 255, 0.352);
+  color: rgb(0, 0, 0);
+  transition: ease-out .3s;
+}
+.glass1-white:hover {
+  background-color: rgba(0, 0, 0, 0.697);
+  color: rgb(255, 255, 255);
+  transition: ease-out .3s;
+}
+.glass1{
+  width: 500px;
+  height: 200px;
+  padding-top: 45px;
+  transition: ease-out .3s;
+}
+
+.glass1-white{
+  width: 500px;
+  color: black;
+  height: 200px;
+  padding-top: 45px;
+  transition: ease-out .3s;
+}
+
+.abt-p {
+  font-family: "'Cutive Mono', monospace";
+  font-size: "15px";
+  padding: "30px 100px 20px 100px";
+}
+.bttonn {
+  color: rgb(255, 255, 255);
+  background-color: #700B97;
+  padding: 10px;
+  border-radius: 10px;
+  border: 0px;
+  
+ 
+}
+
+.bttonn:hover {
+  color: #700B97;
+  background-color: white;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.bttonnn {
+  color: rgb(255, 255, 255);
+  background-color: #700B97;
+  padding: 10px;
+  border-radius: 10px;
+  border: 0px;
+  margin: 10px;
+  
+ 
+}
+.bttonnn:hover {
+  color: #700B97;
+  background-color: white;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.projects {
+  width: 100%;
+  height: 100vh;
+  padding-top: 70px;
+  margin-top: -87px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(./Components/blob-scene-haikei\ \(1\).svg);
+  /* transition: 2s; */
+
+}
+.projects-white {
+  width: 100%;
+  height: 100vh;
+  padding-top: 70px;
+  margin-top: -87px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(./Components/blob-scene-haikei-light2.svg);
+  /* transition: 1s; */
+
+}
+.prj-img img {
+  width: 400px;
+  border-radius: 20px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease; 
+
+}
+
+.prj-img img:hover {
+  border-radius: 0px;
+  
+
+}
+
+.prj-img:hover .bankai{
+  visibility: visible;
+}
+.prj-img {
+  margin: 40px;
+  position: relative;
+}
+.bankai {
+  position: absolute;
+  top: 43%;
+  left: 37%;
+  visibility: hidden;
+}
+.bttoonn {
+  color: rgb(255, 255, 255);
+  background-color: #700B97;
+  padding: 10px;
+  border-radius: 10px;
+  border: 0px;
+  
+}
+.bttoonn:hover {
+  color: #ffffff;
+  background-color: rgb(0, 0, 0);
+}
+.gitdiv {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.imgg {
+  width: 350px;
+  border-radius:50px; 
+}
+.sun{
+  position: absolute;
+  top: 15px;
+  right: 28px;
+  pointer-events: none;
+}
+
+.moon {
+  position: absolute;
+  top: 15px;
+  right: 55px;
+  pointer-events: none;
+
+}
+
+
+.hide {
+
+  visibility: hidden;
+
+}
+.huha:hover {
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .a2 {
+    height: 900px; /* Adjust the height for mobile */
   }
-  to {
-    transform: rotate(360deg);
+  .abt-p {
+    padding: "30px 30px 30px 10px";
   }
+  .glass1 {
+    margin-bottom: 20px;
+  }
+  .projects{
+    margin-top: -17px;
+  }
+  .imgg {
+    width: 100%;
+  }
+
+  .bankai {
+    position: absolute;
+    top: 32%;
+    left: 25%;
+    
+  }
+
+
+}
+@media (max-width: 1000px) {
+
+  .prj-img img {
+    width: 210px;
+    border-radius: 20px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease; 
+    margin-bottom: -20px;
+    margin-top: -18px;
+ 
+  
+  }
+  .sun{
+    visibility: hidden;
+
+  }
+  
+  .moon {
+  visibility: hidden;
+  }
+
+.imgg {
+  visibility: hidden;
+}
 }
